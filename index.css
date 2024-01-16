@@ -1,0 +1,48 @@
+
+html {
+    background-image: url(rainyBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.clock-body {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    border: 15px solid rgb(56, 64, 73);
+    border-radius: 100%;
+    box-shadow: 0 0 0 4px rgba(0,0,0,0.1),
+                inset 0 0 0 3px #EFEFEF,
+                inset 0 0 10px black,
+                0 0 10px rgba(0,0,0,0.2);;
+}
+
+.hand {
+    position: absolute;
+    width: 5px;
+    height: 50%;
+    border-radius: 20%;
+    background-color: rgb(56, 64, 73);
+    transform-origin: 50% 100%;
+    left: 50%;
+}
+
+
+.center {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(56, 64, 73);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
